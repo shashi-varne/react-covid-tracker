@@ -10,7 +10,7 @@ body {
   /* height: "100%"; */
 }
 .footer {
-  background-color: #5aaaf6;
+  background-color: #bed8f0;
   padding: 10px 25px;
   /* position: absolute; */
   border-radius: 20px;
@@ -99,7 +99,7 @@ body {
 }
 
 .today__container {
-  background-color: #f3d6d6;
+  background-color: #f8eaea;
   width: 250px;
   border-radius: 20px;
   text-align: center;

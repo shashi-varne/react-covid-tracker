@@ -152,7 +152,7 @@ const App = () => {
       </div>
       <div className="footer">
         <p>
-          Author:{" "}
+          Developed by:{" "}
           <a
             href="https://www.linkedin.com/in/shashidhar-varne/"
             target="_blank"
