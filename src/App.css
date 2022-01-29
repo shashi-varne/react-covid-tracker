@@ -3,18 +3,49 @@
 }
 
 body {
-  background-color: #f5f6fa;
+  background-color: #f8f8fa;
+}
+.main {
+  position: relative;
+  /* height: "100%"; */
+}
+.footer {
+  background-color: #5aaaf6;
+  padding: 10px 25px;
+  /* position: absolute; */
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.my_name {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer p {
+  color: white;
+  margin-right: 10px;
+  font-weight: normal;
+}
+.footer span {
+  font-weight: bold;
 }
 
 .app {
   display: flex;
-  justify-content: space-evenly;
-  background-color: #f5f6fa;
+  justify-content: space-between;
   padding: 20px;
 }
 
 .app__dropdown {
   background-color: white;
+}
+
+.MuiMenu-paper::-webkit-scrollbar {
+  display: none;
 }
 
 .app__header {
@@ -36,21 +67,77 @@ body {
 
 .app__left {
   flex: 0.9;
+  margin-right: 20px;
 }
 
 .app__information > h3 {
-  color: #6a5d5d;
+  color: #0853b6;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 800;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .app__information > h3:last-of-type {
   margin-top: 1rem;
 }
 
+.title__container {
+  border-radius: 10px;
+  flex: 1;
+  padding: 10px 20px;
+  margin-right: 15px;
+  background-color: #ececf1;
+}
+
+.covid__title {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f00000;
+}
+
+.today__container {
+  background-color: #f3d6d6;
+  width: 250px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.today {
+  color: #d33232;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.app__right {
+  flex: 0.25;
+  border-radius: 12px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__right .MuiCardContent-root {
+  flex: 1 !important;
+}
+
+.app__information {
+  height: 100%;
+}
+
 @media (max-width: 990px) {
   .app {
     flex-direction: column;
+  }
+  .app__right {
+    margin-top: 20px;
+  }
+
+  .app__left {
+    margin-right: 0;
   }
 }

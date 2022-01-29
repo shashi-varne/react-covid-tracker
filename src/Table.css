@@ -1,9 +1,22 @@
 .table {
   margin-top: 20px;
-  overflow: scroll;
+  overflow: auto;
   color: #6a5d5d;
   background-color: white;
-  height: 400px;
+  height: 500px;
+  border-radius: 6px;
+  border: 2px solid #888faf;
+}
+
+.table::-webkit-scrollbar {
+  background-color: #f8f8fa;
+  width: 8px;
+}
+
+.table::-webkit-scrollbar-thumb {
+  background-color: #adb1c3;
+  border-radius: 10px;
+  height: 40px;
 }
 
 .table tr {
